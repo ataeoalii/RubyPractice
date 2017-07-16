@@ -12,13 +12,28 @@
   <% end %>
 
   <div class="field">
-    <%= form.label :password %>
-    <%= form.text_field :password, id: :user_password %>
+    <%= form.label :first_name %>
+    <%= form.text_field :first_name, id: :user_first_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :last_name %>
+    <%= form.text_field :last_name, id: :user_last_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :birthdate %>
+    <%= form.date_select :birthdate, id: :user_birthdate, :start_year=>DateTime.now.year - 101, :end_year=>DateTime.now.year %>
   </div>
 
   <div class="field">
     <%= form.label :email %>
     <%= form.text_field :email, id: :user_email %>
+  </div>
+
+  <div class="field">
+    <%= form.label :password %>
+    <%= form.password_field :password, id: :user_password %>
   </div>
 
   <div class="actions">
