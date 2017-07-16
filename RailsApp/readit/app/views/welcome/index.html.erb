@@ -1,0 +1,17 @@
+<h1>Welcome#index</h1>
+<p>Find me in app/views/welcome/index.html.erb</p>
+
+<%= "Count to 10 -- " %>
+
+<% 10.times do |x| %>
+	<%= x+1 %>
+<% end %>
+<%# Comment %>
+
+<% if(params.has_key?(:id) && params.has_key?(:random))
+	%>
+	<br />
+	<%= "ID: #{params[:id]}" %>
+	<br />
+	<%= "My Name: #{params[:random]}" %>
+<% end %>
