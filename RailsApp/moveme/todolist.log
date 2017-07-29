@@ -1,0 +1,5 @@
+TODO list
+1) hash password before storing
+2) login/logout functionality
+3) session
+4) link comments to logged in users
